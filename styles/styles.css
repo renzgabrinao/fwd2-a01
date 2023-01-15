@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* Box Sizing Reset */
+html {
+  box-sizing: border-box;
+  background: linear-gradient(#6accf0, #d4f2fc);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+main {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  max-width: 480px;
+  /* height: 800px; */
+  margin: 50px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem rgb(50, 50, 50);
+  padding: 1.5em;
+}
+
+.field-title {
+  border: none;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-title legend {
+  padding: 0 10px 0 10px;
+}
+
+.field-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #74cd87;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.text-inputs,
+.select,
+textarea {
+  border: none;
+  border-radius: 3px;
+  background-color: #e9eeef;
+  height: 30px;
+  padding-left: 15px;
+}
+
+.text-inputs:focus,
+textarea:focus {
+  background-color: white;
+}
+
+/* Sign Up Text styling */
+
+.signup {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-shadow: 2px 2px 3px gray;
+  margin-bottom: 25px;
+}
+
+/* Account Info styling */
+
+.account-info {
+  display: flex;
+  flex-flow: column;
+}
+
+.account-info label {
+  margin-top: 10px;
+}
+
+/* Dev Skills & Experience styling */
+
+.dev-skills,
+.experience {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+/* Other styling */
+
+.other {
+  padding-bottom: 0;
+}
+
+textarea {
+  height: 100px;
+  padding: 5px 5px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+#tell-me-more textarea {
+  height: 50px;
+  width: 100%;
+}
+
+/* buttons styling */
+
+.buttons {
+  border: none;
+  padding-top: 0;
+}
+
+.submit,
+.clear {
+  padding: 8px;
+}
+
+.submit {
+  background-color: #74cd87;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0 20px 0;
+}
+
+.clear {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+/* footer styles */
+footer {
+  font-size: 1.5em;
+  text-align: right;
+  padding-right: 20px;
+}

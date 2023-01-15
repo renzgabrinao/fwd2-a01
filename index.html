@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label class="signup">Signup</label>
+
+        <fieldset class="field-title">
+          <legend>
+            <label class="field-number">1</label>
+            Account Info
+          </legend>
+          <label for="name">Name</label>
+          <input type="text" name="username" class="text-inputs" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" class="text-inputs" />
+
+          <label for="password">Password</label>
+          <input type="password" name="password" class="text-inputs" />
+        </fieldset>
+
+        <fieldset class="field-title">
+          <legend>
+            <label class="field-number">2</label>
+            Dev Skills
+          </legend>
+          <label class="description">Programming Languages</label>
+          <div class="dev-skills">
+            <div>
+              <input type="checkbox" name="language1" value="html" />
+              <label for=" html">HTML</label>
+            </div>
+            <div>
+              <input type="checkbox" name="language2" value="css" />
+              <label for="css">CSS</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="language3" value="javascript" />
+              <label for="javascript">Javascript</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="language4" value="php" />
+              <label for="php">PHP</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-title">
+          <legend>
+            <label class="field-number">3</label>
+            Experience
+          </legend>
+          <label class="description">Overall Experience</label>
+
+          <div class="experience">
+            <div>
+              <input type="radio" name="experience" value="beginner" checked />
+              <label for="beginner">Beginner</label>
+            </div>
+            <div>
+              <input type="radio" name="experience" value="intermediate" />
+              <label for="Intermediate">Intermediate</label>
+            </div>
+            <div>
+              <input type="radio" name="experience" value="advanced" />
+              <label for="advanced">Advanced</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-title other">
+          <legend>
+            <label class="field-number">4</label>
+            Other
+          </legend>
+          <label class="description">How did you hear about us?</label>
+
+          <select
+            name="reference"
+            id="reference"
+            class="select"
+            onchange="showTextbox()"
+          >
+            <option selected value="">Please Select...</option>
+            <optgroup label="Person">
+              <option value="friend">Friend</option>
+              <option value="family">Family</option>
+              <option value="colleague">Colleague</option>
+            </optgroup>
+            <optgroup label="Media">
+              <option value="internet">Internet</option>
+              <option value="radio">Radio</option>
+              <option value="tv">TV</option>
+              <option value="newspaper">Newspaper</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="magic">Magic!</option>
+              <option value="other">Other...</option>
+            </optgroup>
+          </select>
+
+          <div id="tell-me-more">
+            <label>Please do tell...</label>
+            <textarea name="tell-me-more"></textarea>
+          </div>
+          <label>Comments</label>
+          <textarea name="comments"></textarea>
+        </fieldset>
+
+        <fieldset class="field-title buttons">
+          <button type="submit" class="submit">Submit</button>
+          <button id="clearform" class="clear">Clear Form</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>&copy; 2023 Renz Gabrinao</footer>
+  </body>
+  <script src="./scripts/scripts.js"></script>
+</html>
