@@ -16,86 +16,53 @@
         <label class="signup">Signup</label>
 
         <fieldset class="field-title">
-          <legend class="field-legend">Account Info</legend>
-          <input
-            type="text"
-            name="username"
-            class="text-inputs"
-            placeholder="Full name..."
-          />
+          <legend>
+            <label class="field-number">1</label>
+            Account Info
+          </legend>
+          <label for="name">Name</label>
+          <input type="text" name="username" class="text-inputs" />
 
-          <input
-            type="email"
-            name="email"
-            class="text-inputs"
-            placeholder="Email Address..."
-          />
+          <label for="email">Email</label>
+          <input type="email" name="email" class="text-inputs" />
 
-          <input
-            type="password"
-            name="password"
-            class="text-inputs"
-            placeholder="Password... Minimum 8 characters"
-          />
+          <label for="password">Password</label>
+          <input type="password" name="password" class="text-inputs" />
         </fieldset>
 
         <fieldset class="field-title">
-          <legend class="field-legend">Dev Skills</legend>
+          <legend>
+            <label class="field-number">2</label>
+            Dev Skills
+          </legend>
           <label class="description">Programming Languages</label>
-          <section class="dev-skills">
+          <div class="dev-skills">
             <div>
-              <input type="checkbox" name="html" value="html" />
+              <input type="checkbox" name="language1" value="html" />
               <label for=" html">HTML</label>
             </div>
-
             <div>
-              <input type="checkbox" name="css" value="css" />
+              <input type="checkbox" name="language2" value="css" />
               <label for="css">CSS</label>
             </div>
 
             <div>
-              <input type="checkbox" name="sass" value="sass" />
-              <label for="sass">Sass</label>
-            </div>
-
-            <div>
-              <input type="checkbox" name="javascript" value="javascript" />
+              <input type="checkbox" name="language3" value="javascript" />
               <label for="javascript">Javascript</label>
             </div>
 
             <div>
-              <input type="checkbox" name="php" value="php" />
+              <input type="checkbox" name="language4" value="php" />
               <label for="php">PHP</label>
             </div>
-
-            <div>
-              <input type="checkbox" name="python" value="python" />
-              <label for="python">Python</label>
-            </div>
-          </section>
-
-          <label class="description">Dev Ops</label>
-
-          <section class="dev-skills">
-            <div>
-              <input type="checkbox" name="git" value="git" />
-              <label for="git">Git</label>
-            </div>
-
-            <div>
-              <input type="checkbox" name="gulp" value="gulp" />
-              <label for="gulp">Gulp</label>
-            </div>
-
-            <div>
-              <input type="checkbox" name="webpack" value="webpack" />
-              <label for="webpack">Webpack</label>
-            </div>
-          </section>
+          </div>
         </fieldset>
 
         <fieldset class="field-title">
-          <legend class="field-legend">Experience</legend>
+          <legend>
+            <label class="field-number">3</label>
+            Experience
+          </legend>
           <label class="description">Overall Experience</label>
 
           <div class="experience">
@@ -115,7 +82,10 @@
         </fieldset>
 
         <fieldset class="field-title other">
-          <legend class="field-legend">Other</legend>
+          <legend>
+            <label class="field-number">4</label>
+            Other
+          </legend>
           <label class="description">How did you hear about us?</label>
 
           <select
@@ -142,7 +112,7 @@
             </optgroup>
           </select>
 
-          <div id="tell-me-more" hidden>
+          <div id="tell-me-more">
             <label>Please do tell...</label>
             <textarea name="tell-me-more"></textarea>
           </div>
