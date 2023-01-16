@@ -16,76 +16,188 @@
         <label class="signup">Signup</label>
 
         <fieldset class="field-title">
-          <legend>
-            <label class="field-number">1</label>
-            Account Info
-          </legend>
-          <label for="name">Name</label>
-          <input type="text" name="username" class="text-inputs" />
+          <legend class="field-legend">Account Info</legend>
+          <input
+            aria-label="Enter full name"
+            type="text"
+            name="username"
+            class="text-inputs"
+            placeholder="Full name..."
+          />
 
-          <label for="email">Email</label>
-          <input type="email" name="email" class="text-inputs" />
+          <input
+            aria-label="Enter email address"
+            type="email"
+            name="email"
+            class="text-inputs"
+            placeholder="Email Address..."
+          />
 
-          <label for="password">Password</label>
-          <input type="password" name="password" class="text-inputs" />
+          <input
+            aria-label="Enter password"
+            type="password"
+            name="password"
+            class="text-inputs"
+            placeholder="Password... Minimum 8 characters"
+          />
         </fieldset>
 
         <fieldset class="field-title">
-          <legend>
-            <label class="field-number">2</label>
-            Dev Skills
-          </legend>
-          <label class="description">Programming Languages</label>
-          <div class="dev-skills">
+          <legend class="field-legend">Dev Skills</legend>
+          <label class="description" aria-label="select programming languages"
+            >Programming Languages</label
+          >
+          <section class="dev-skills">
             <div>
-              <input type="checkbox" name="language1" value="html" />
-              <label for=" html">HTML</label>
-            </div>
-            <div>
-              <input type="checkbox" name="language2" value="css" />
-              <label for="css">CSS</label>
-            </div>
-
-            <div>
-              <input type="checkbox" name="language3" value="javascript" />
-              <label for="javascript">Javascript</label>
+              <input
+                type="checkbox"
+                name="html"
+                value="html"
+                aria-checked="false"
+                aria-label="html"
+              />
+              <label for=" html" aria-hidden="true">HTML</label>
             </div>
 
             <div>
-              <input type="checkbox" name="language4" value="php" />
-              <label for="php">PHP</label>
+              <input
+                type="checkbox"
+                name="css"
+                value="css"
+                aria-checked="false"
+                aria-label="css"
+              />
+              <label for="css" aria-hidden="true">CSS</label>
             </div>
-          </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="sass"
+                value="sass"
+                aria-checked="false"
+                aria-label="sass"
+              />
+              <label for="sass" aria-hidden="true">Sass</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="javascript"
+                value="javascript"
+                aria-checked="false"
+                aria-label="javascript"
+              />
+              <label for="javascript" aria-hidden="true">Javascript</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="php"
+                value="php"
+                aria-checked="false"
+                aria-label="php"
+              />
+              <label for="php" aria-hidden="true">PHP</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="python"
+                value="python"
+                aria-checked="false"
+                aria-label="python"
+              />
+              <label for="python" aria-hidden="true">Python</label>
+            </div>
+          </section>
+
+          <label class="description" aria-label="select dev ops languages"
+            >Dev Ops</label
+          >
+
+          <section class="dev-skills">
+            <div>
+              <input
+                type="checkbox"
+                name="git"
+                value="git"
+                aria-checked="false"
+                aria-label="git"
+              />
+              <label for="git" aria-hidden="true">Git</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="gulp"
+                value="gulp"
+                aria-checked="false"
+                aria-label="gulp"
+              />
+              <label for="gulp" aria-hidden="true">Gulp</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="webpack"
+                value="webpack"
+                aria-checked="false"
+                aria-label="webpack"
+              />
+              <label for="webpack" aria-hidden="true">Webpack</label>
+            </div>
+          </section>
         </fieldset>
 
         <fieldset class="field-title">
-          <legend>
-            <label class="field-number">3</label>
-            Experience
-          </legend>
-          <label class="description">Overall Experience</label>
+          <legend class="field-legend">Experience</legend>
+          <label class="description" aria-label="Select overall experience"
+            >Overall Experience</label
+          >
 
           <div class="experience">
             <div>
-              <input type="radio" name="experience" value="beginner" checked />
-              <label for="beginner">Beginner</label>
+              <input
+                type="radio"
+                name="experience"
+                value="beginner"
+                checked
+                aria-checked="true"
+                aria-label="beginner"
+              />
+              <label for="beginner" aria-hidden="true">Beginner</label>
             </div>
             <div>
-              <input type="radio" name="experience" value="intermediate" />
-              <label for="Intermediate">Intermediate</label>
+              <input
+                type="radio"
+                name="experience"
+                value="intermediate"
+                aria-checked="false"
+                aria-label="intermediate"
+              />
+              <label for="intermediate" aria-hidden="true">Intermediate</label>
             </div>
             <div>
-              <input type="radio" name="experience" value="advanced" />
-              <label for="advanced">Advanced</label>
+              <input
+                type="radio"
+                name="experience"
+                value="advanced"
+                aria-checked="false"
+                aria-label="advanced"
+              />
+              <label for="advanced" aria-hidden="true">Advanced</label>
             </div>
           </div>
         </fieldset>
 
         <fieldset class="field-title other">
-          <legend>
-            <label class="field-number">4</label>
-            Other
-          </legend>
+          <legend class="field-legend">Other</legend>
           <label class="description">How did you hear about us?</label>
 
           <select
@@ -93,8 +205,11 @@
             id="reference"
             class="select"
             onchange="showTextbox()"
+            aria-label="Please select an option"
           >
-            <option selected value="">Please Select...</option>
+            <option selected value="" aria-hidden="true">
+              Please Select...
+            </option>
             <optgroup label="Person">
               <option value="friend">Friend</option>
               <option value="family">Family</option>
@@ -112,17 +227,22 @@
             </optgroup>
           </select>
 
-          <div id="tell-me-more">
+          <div id="tell-me-more" hidden>
             <label>Please do tell...</label>
-            <textarea name="tell-me-more"></textarea>
+            <textarea name="tell-me-more" aria-label="Tell us more"></textarea>
           </div>
           <label>Comments</label>
-          <textarea name="comments"></textarea>
+          <textarea
+            name="comments"
+            aria-label="Enter any additional comments"
+          ></textarea>
         </fieldset>
 
         <fieldset class="field-title buttons">
           <button type="submit" class="submit">Submit</button>
-          <button id="clearform" class="clear">Clear Form</button>
+          <button id="clearform" class="clear" onclick="reloadPage()">
+            Clear Form
+          </button>
         </fieldset>
       </form>
     </main>

@@ -11,4 +11,8 @@ const showTextbox = () => {
   console.log(textbox);
 };
 
+const reloadPage = () => {
+  window.location.href = window.location.href;
+};
+
 reference.addEventListener("onchange", showTextbox);
